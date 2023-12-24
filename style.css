@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins;
+    overflow-x: hidden;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 20px;
+}
+
+#header img{
+    width: 150px;
+}
+
+#header div{
+    display: flex;
+    gap: 40px;
+}
+
+#header div a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    transition: 0.5s;
+}
+
+#header div a:hover{
+    text-shadow: 0 0 10px red ;
+    color: red;
+}
+
+#welcome-sec{
+    background: url(images/main.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 20px;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+#welcome-sec h1{
+    margin-top: 300px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-family: 'Inter';
+}
+
+#welcome-sec p{
+    max-width: 700px;
+    font-size: 22px;
+    margin: auto;
+}
+
+@media (max-width:900px){
+    #welcome-sec h1{
+        font-size: 40px;
+    }
+    #welcome-sec p{
+        font-size: 16px;
+    }
+}
+
+/* 2.ALAN */
+
+#about{
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.about-text{
+    max-width: 600px;
+}
+.about-text h1{
+    font-size: 75px;
+    line-height: 80px;
+    font-weight: 600;
+}
+.about-text p{
+    margin-top: 30px;
+}
+.about-text p span{
+    border-bottom: 1px solid red;
+}
+
+
+
+
+
+
+/* 3.alan */
+
+#battle{
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, black 60%) ,url(images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+#battle .heading{
+    padding-top: 100px;
+}
+
+.heading h5{
+    font-size: 24px;
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.boxes {
+    width: 620px;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 300px;
+    height: 140px;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box h1{
+    font-size: 20px;
+    color: crimson;
+    
+}
+
+.box:last-child{
+    width: 600px;
+}
+
+@media (max-width:1100px){
+    #welcome-sec h1{
+        font-size: 40px;
+    }
+    #welcome-sec p{
+        font-size: 15px;
+    }
+    #about{
+    flex-direction: column;
+    gap: 20px;
+    }
+    .about-text h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    #about img{
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 230px;
+    object-fit:contain;
+    }
+
+    #battle{
+        padding:10px;
+    }
+
+    .heading{
+        padding: 0px;
+    }
+    .heading h1{
+        font-size: 20px;
+    }
+
+    .heading h5{
+        font-size: 50px;
+    }
+
+    .boxes{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .box:last-child{
+        width: 100%;
+    }
+}
